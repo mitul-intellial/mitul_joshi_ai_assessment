@@ -205,3 +205,32 @@ Additional Output Rules:
 - Use simple, professional language.
 - No placeholders; adapt to the actual implementation.
 - Include final README content only. No additional commentary.
+
+
+#PROMPT 7
+
+Add a minimal UI layer to satisfy the original requirement that users must be able to "upload" and select BOM files.
+
+Using Tkinter, generate a new module named ui_file_selector.py that:
+- exposes a function `launch_file_selector()`
+- opens a graphical window titled: "BOM Comparison - File Selection"
+- allows the user to:
+    1. pick a Master BOM file (XLSX only)
+    2. pick 1 to 5 Target BOM files (formats allowed: CSV, XLSX, DOCX, PDF, TXT)
+- uses filedialog.askopenfilename() for master file
+- uses filedialog.askopenfilenames() for targets
+- shows selected file names in readable label text
+- validates:
+    * master file must be selected
+    * 1–5 targets must be selected
+- if validation fails, show an error popup using messagebox
+- if valid, close the window and return:
+      (master_file_path, target_file_paths_list)
+
+Important:
+- Do NOT implement any comparison logic in this file.
+- Keep it only for file selection.
+- If user cancels, return (None, None).
+- Keep code short, readable, commented.
+- Include basic instructions text so it looks user-friendly.
+- Output only the complete Python code for ui_file_selector.py.

@@ -117,3 +117,30 @@ While the core functionality is implemented, several areas can be enhanced to im
 *   **Graphical User Interface (GUI):** The initial requirements hinted at a UI ("upload", "click"). Developing a simple web-based (e.g., Flask/Streamlit) or desktop (e.g., Tkinter/PyQt) GUI would greatly enhance usability, allowing users to upload files and view results interactively.
 *   **Performance Optimization:** For very large BOM files (thousands of lines), investigate performance bottlenecks in parsing and comparison logic and optimize where necessary.
 *   **Detailed RefDes Comparison in Console:** While `DIFF REFDES` is shown, the console output could be enhanced to explicitly list the added and removed reference designators for better clarity.
+
+
+## User Interface Note
+
+The original requirement mentions a UI for file upload and visual comparison. 
+
+Given the limited development time of this AI-based assessment, the UI has been implemented as a command-line interface (CLI):
+
+- The user specifies the master file and target BOM files as arguments.
+- The files are automatically detected and processed.
+- Comparison results are displayed in a structured table in the terminal.
+- Differences are highlighted using ANSI color codes.
+
+This satisfies the intent of:
+✔ selecting/uploading files  
+✔ displaying comparisons side-by-side  
+✔ visually highlighting mismatches  
+
+A graphical UI can be added as a future enhancement.
+
+
+### Future UI Enhancement
+The tool can be extended in upcoming iterations to include:
+- Web UI built with Flask/React
+- Desktop interface with file upload fields
+- Side-by-side table comparison in HTML
+- Dynamic filtering and export options
