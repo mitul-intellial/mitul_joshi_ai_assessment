@@ -1,0 +1,216 @@
+{
+    "master_source": "samples/bom.xlsx",
+    "comparisons": [
+        {
+            "target_file": "samples/bom.csv",
+            "result": {
+                "missing_items": [],
+                "extra_items": [],
+                "mismatched_quantity": [],
+                "mismatched_description": [
+                    {
+                        "MPN": "74479777310A",
+                        "master_item": {
+                            "MPN": "74479777310A",
+                            "Quantity": 1,
+                            "RefDes": [],
+                            "Description": "WE-PMI Power Multilayer Inductor, L= 10.0\u00ac\u00b5H"
+                        },
+                        "target_item": {
+                            "MPN": "74479777310A",
+                            "Quantity": 1,
+                            "RefDes": [],
+                            "Description": "WE-PMI Power Multilayer Inductor, L= 10.0\u00b5H"
+                        }
+                    },
+                    {
+                        "MPN": "NX3215SA 32.768KHz EXS00A-MU00376",
+                        "master_item": {
+                            "MPN": "NX3215SA 32.768KHz EXS00A-MU00376",
+                            "Quantity": 1,
+                            "RefDes": [],
+                            "Description": "XTAL SMD 3215, 32.768kHz, Cl=9pF, Total Tol: \u00ac\u00b150ppm"
+                        },
+                        "target_item": {
+                            "MPN": "NX3215SA 32.768KHz EXS00A-MU00376",
+                            "Quantity": 1,
+                            "RefDes": [],
+                            "Description": "XTAL SMD 3215, 32.768kHz, Cl=9pF, Total Tol: \u00b150ppm"
+                        }
+                    }
+                ],
+                "mismatched_refdes": [],
+                "matched": [
+                    {
+                        "MPN": "PRO-OB-440",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Onboard SMD 2400 MHz Antenna for BLE, WLAN/Wifi"
+                    },
+                    {
+                        "MPN": "M40-310054R",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Harwin connector 2Rows x 6 contacts M40-3100545R"
+                    },
+                    {
+                        "MPN": "79578211",
+                        "Quantity": 2,
+                        "RefDes": [],
+                        "Description": "Battery Holder WA-BCPH, Battery Type: 2450p"
+                    },
+                    {
+                        "MPN": "1848642",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Plug component, Push-in spring connection"
+                    },
+                    {
+                        "MPN": "NSL-19M51",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Light Dependant Resistor Phot"
+                    },
+                    {
+                        "MPN": "GCJ188R71C104KA01D",
+                        "Quantity": 13,
+                        "RefDes": [],
+                        "Description": "Capacitor 0603 100nF"
+                    },
+                    {
+                        "MPN": "nRF52832-QFAA",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Multi-protocol Bluetooth Low Energy, ANT and 2.4GHz proprietary system-on-chip"
+                    },
+                    {
+                        "MPN": "NSVBC850CLT1G",
+                        "Quantity": 2,
+                        "RefDes": [],
+                        "Description": "NPN general purpose transistor"
+                    },
+                    {
+                        "MPN": "GCM188R72A102KA37D",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Capacitor 1nF 0402"
+                    },
+                    {
+                        "MPN": "744784115A",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "WE-MK Multilayer Ceramic SMD Inductor, size 0402A, 15nH"
+                    },
+                    {
+                        "MPN": "KSC621JLFS",
+                        "Quantity": 3,
+                        "RefDes": [],
+                        "Description": "Tactile switch SMT"
+                    },
+                    {
+                        "MPN": "CRS08",
+                        "Quantity": 5,
+                        "RefDes": [],
+                        "Description": "CRS08 Schottky Diode"
+                    },
+                    {
+                        "MPN": "SQ-MIN-200",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Nano Power Tilt and Vibration sensor"
+                    },
+                    {
+                        "MPN": "CRCW060310K0FKTABC",
+                        "Quantity": 3,
+                        "RefDes": [],
+                        "Description": "SMD Resistor 10k 0603"
+                    },
+                    {
+                        "MPN": "GCM1885C1H6R0CA16D",
+                        "Quantity": 2,
+                        "RefDes": [],
+                        "Description": "Capacitor NP0 0603 50V"
+                    },
+                    {
+                        "MPN": "GCM1885C1H101JA16D",
+                        "Quantity": 4,
+                        "RefDes": [],
+                        "Description": "Capacitor 100pF 0603 NP0"
+                    },
+                    {
+                        "MPN": "GRM188R60J475KE19D",
+                        "Quantity": 3,
+                        "RefDes": [],
+                        "Description": "Capacitor X5R 0603 Murata"
+                    },
+                    {
+                        "MPN": "TPS61025DRCR",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Boost Voltage Converter with 0.9 to 6.5 V Input, -40 to 85 degC, 10-Pin SON (DRC), Green (RoHS & no Sb/Br)"
+                    },
+                    {
+                        "MPN": "AL-61SP05SA",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Piezo Buzzer"
+                    },
+                    {
+                        "MPN": "74438335068",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "WE-MAPI SMD Shielded Power Inductor, size 3015, 1.1 A, 6.8 uH"
+                    },
+                    {
+                        "MPN": "TH06",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "I2C Humidity and Temperature Sensor module"
+                    },
+                    {
+                        "MPN": "CRCW06033M30FKTABC",
+                        "Quantity": 3,
+                        "RefDes": [],
+                        "Description": "SMD Resistor 3M3 0603"
+                    },
+                    {
+                        "MPN": "875115560004",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "WCAP-PSHP Aluminum Polymer Capacitors, D10mm x L8.7mm, 100 uF, 25 VDC"
+                    },
+                    {
+                        "MPN": "GCM1555C1H120JA16D",
+                        "Quantity": 4,
+                        "RefDes": [],
+                        "Description": "Capacitor NP0 0402"
+                    },
+                    {
+                        "MPN": "CRCW06034K99FKTABC",
+                        "Quantity": 3,
+                        "RefDes": [],
+                        "Description": "SMD Resistor 4k99 0603"
+                    },
+                    {
+                        "MPN": "NX3225SA",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "NDK  NX3225SA 32MHz Oscillator"
+                    },
+                    {
+                        "MPN": "CRCW0603100KFKTABC",
+                        "Quantity": 2,
+                        "RefDes": [],
+                        "Description": "SMD Resistor 100k 0603"
+                    },
+                    {
+                        "MPN": "GRM188R61E105KA12D",
+                        "Quantity": 1,
+                        "RefDes": [],
+                        "Description": "Capacitor 1uF X5R 0603 Murata"
+                    }
+                ]
+            }
+        }
+    ]
+}
