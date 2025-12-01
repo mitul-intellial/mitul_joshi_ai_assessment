@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Analytics - Order Fulfillment System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <h1>Exception Analytics & Root Cause Analysis</h1>
+            <p class="subtitle">Deep insights into order exceptions and systemic issues</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-button active" data-tab="analytics">Analytics</button>
+            <button class="tab-button" data-tab="root-cause">Root Cause</button>
+            <button class="tab-button" data-tab="forecasting">Forecasting</button>
+            <button class="tab-button" data-tab="cost-impact">Cost Impact</button>
+            <button class="tab-button" data-tab="recommendations">Recommendations</button>
+        </div>
+    </div>
+
+    <!-- Filters Bar -->
+    <div class="filters-bar">
+        <div class="filters-left">
+            <select id="dateRange" class="filter-select">
+                <option value="7days">Last 7 days</option>
+                <option value="30days" selected>Last 30 days</option>
+                <option value="90days">Last 90 days</option>
+            </select>
+            
+            <select class="filter-select">
+                <option>Compare to: Previous Period</option>
+                <option>Compare to: Last Year</option>
+            </select>
+
+            <label class="checkbox-label">
+                <input type="checkbox" checked>
+                <span>Auto-refresh</span>
+            </label>
+        </div>
+
+        <div class="filters-right">
+            <button class="btn-secondary">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                </svg>
+                Filters
+            </button>
+            <button class="btn-primary">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                Export
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Metrics -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <p class="metric-label">Exception Rate</p>
+                <p class="metric-value">8.4%</p>
+                <div class="metric-trend positive">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                    </svg>
+                    <span>-1.2%</span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <p class="metric-label">Recurring Issues</p>
+                <p class="metric-value">124</p>
+                <div class="metric-trend negative">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
+                    </svg>
+                    <span>+15%</span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <p class="metric-label">Cost per Exception</p>
+                <p class="metric-value">$12.50</p>
+                <div class="metric-trend positive">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                    </svg>
+                    <span>-$2.30</span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <p class="metric-label">Prevention Rate</p>
+                <p class="metric-value">67%</p>
+                <div class="metric-trend positive">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                    </svg>
+                    <span>+5%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Exception Volume by Category</h3>
+                <canvas id="volumeChart"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h3>Exception Trend (Last 7 Days)</h3>
+                <canvas id="trendChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Root Cause Analysis -->
+        <div class="section-card">
+            <h3>Root Cause Analysis</h3>
+            
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Root Cause</th>
+                            <th>Count</th>
+                            <th>% Total</th>
+                            <th>Trend</th>
+                            <th>Avg Cost</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rootCauseTable">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Drill-down Details -->
+            <div id="drilldownPanel" class="drilldown-panel" style="display: none;">
+                <h4 id="drilldownTitle"></h4>
+                
+                <div class="drilldown-grid">
+                    <div>
+                        <p class="drilldown-label">Sub-categories:</p>
+                        <ul id="subcategoriesList" class="drilldown-list"></ul>
+                    </div>
+                    
+                    <div>
+                        <p class="drilldown-label">Channel Breakdown:</p>
+                        <ul id="channelsList" class="drilldown-list"></ul>
+                    </div>
+                </div>
+
+                <div class="recommendations">
+                    <p class="drilldown-label">Recommended Actions:</p>
+                    <div class="actions-list">
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Add mandatory phone field to WhatsApp order form</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>Implement real-time address validation on website</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span>Create automated email reminder template</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span>Update training for support team on data collection</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cost Impact -->
+        <div class="section-card">
+            <h3>Cost Impact Analysis</h3>
+            
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Exception Category</th>
+                            <th class="text-right">Total Count</th>
+                            <th class="text-right">Labor Cost</th>
+                            <th class="text-right">Delayed Revenue</th>
+                            <th class="text-right">Total Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Missing Customer Info</td>
+                            <td class="text-right">156</td>
+                            <td class="text-right">$1,248</td>
+                            <td class="text-right">$3,120</td>
+                            <td class="text-right"><strong>$4,368</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Inventory Issues</td>
+                            <td class="text-right">128</td>
+                            <td class="text-right">$2,829</td>
+                            <td class="text-right">$8,960</td>
+                            <td class="text-right"><strong>$11,789</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Payment Problems</td>
+                            <td class="text-right">98</td>
+                            <td class="text-right">$637</td>
+                            <td class="text-right">$2,450</td>
+                            <td class="text-right"><strong>$3,087</strong></td>
+                        </tr>
+                        <tr>
+                            <td>BOM Mismatches</td>
+                            <td class="text-right">142</td>
+                            <td class="text-right">$2,173</td>
+                            <td class="text-right">$4,260</td>
+                            <td class="text-right"><strong>$6,433</strong></td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="4">Total Exception Cost (30 days):</td>
+                            <td class="text-right"><strong>$25,677</strong></td>
+                        </tr>
+                        <tr class="savings-row">
+                            <td colspan="4">Potential Savings with Automation:</td>
+                            <td class="text-right"><strong>$18,974 (74%)</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Pattern Detection -->
+        <div class="section-card">
+            <h3>AI-Powered Pattern Detection</h3>
+            
+            <div class="patterns-list">
+                <div class="pattern-item high-severity">
+                    <svg class="pattern-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <p>SKU-222 appears in 68% of BOM exceptions → Investigate supplier specs</p>
+                    <button class="btn-investigate">Investigate</button>
+                </div>
+
+                <div class="pattern-item medium-severity">
+                    <svg class="pattern-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <p>Exceptions spike 2-4pm daily → Potential staffing gap during peak hours</p>
+                    <button class="btn-investigate">Investigate</button>
+                </div>
+
+                <div class="pattern-item high-severity">
+                    <svg class="pattern-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <p>WhatsApp orders 3x more likely to have missing data → Form redesign?</p>
+                    <button class="btn-investigate">Investigate</button>
+                </div>
+
+                <div class="pattern-item medium-severity">
+                    <svg class="pattern-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <p>Amazon orders delayed by avg 2h more → Integration latency issue?</p>
+                    <button class="btn-investigate">Investigate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
