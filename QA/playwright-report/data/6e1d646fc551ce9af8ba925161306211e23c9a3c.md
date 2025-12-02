@@ -1,0 +1,350 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e8]:
+        - link:
+          - /url: ""
+        - link "Login or Register" [ref=e9] [cursor=pointer]:
+          - /url: /login
+          - generic [ref=e10]: 
+          - generic [ref=e11]: Login or Register
+      - generic [ref=e14]:
+        - link "Quadvelo" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img "Quadvelo" [ref=e18]
+        - navigation [ref=e20]:
+          - list [ref=e23]:
+            - listitem [ref=e24]:
+              - link "Home" [ref=e25] [cursor=pointer]:
+                - /url: /home/
+            - listitem [ref=e26]:
+              - link "Shop" [ref=e27] [cursor=pointer]:
+                - /url: /en/shop/
+            - listitem [ref=e28]:
+              - link "Gallery" [ref=e29] [cursor=pointer]:
+                - /url: /en/gallery/
+            - listitem [ref=e30]:
+              - link "Features" [ref=e31] [cursor=pointer]:
+                - /url: /en/specification/
+            - listitem [ref=e32]:
+              - link "About us" [ref=e33] [cursor=pointer]:
+                - /url: /en/about/
+            - listitem [ref=e34]:
+              - link "Contact us" [ref=e35] [cursor=pointer]:
+                - /url: /en/contact/
+            - listitem [ref=e36]:
+              - link "Blog" [ref=e37] [cursor=pointer]:
+                - /url: /en/blog/
+        - link "View shopping cart" [ref=e40] [cursor=pointer]:
+          - /url: /buy_cart/
+          - generic [ref=e41]: 
+  - generic [ref=e43]:
+    - generic [ref=e45] [cursor=pointer]:
+      - generic [ref=e46]:
+        - button "Slide 1" [ref=e47]
+        - button "Slide 2" [ref=e48]
+        - button "Slide 3" [ref=e49]
+      - generic [ref=e51]:
+        - img "Banner background" [ref=e53]
+        - generic [ref=e56]:
+          - heading "Thank you...!!!" [level=1] [ref=e57]
+          - generic [ref=e58]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - img "Check icon" [ref=e62]
+                - generic [ref=e63]: Thank you for all who participated in the Quadvelo test drive at SPEZI.
+              - listitem [ref=e64]:
+                - img "Check icon" [ref=e65]
+                - generic [ref=e66]: Feel free to leave us your feedback.
+            - generic:
+              - list
+          - link "Contact Us" [ref=e67]:
+            - /url: /en/contact/
+            - button "Contact Us" [ref=e68]
+    - generic [ref=e72]:
+      - generic [ref=e74]:
+        - generic [ref=e76]:
+          - generic [ref=e77]: Project Partners
+          - paragraph
+          - paragraph [ref=e78]: Meet the Masters Behind Quadvelo!
+          - paragraph [ref=e79]: Behind every Quadvelo is a team of brilliant minds and skilled hands
+          - paragraph
+        - link "Read More ..." [ref=e81] [cursor=pointer]:
+          - /url: /en/partners/
+          - text: Read More ...
+          - generic [ref=e82]: 
+      - generic [ref=e84]:
+        - generic [ref=e86]:
+          - generic [ref=e87]: Looking for Spare Parts?
+          - paragraph
+          - paragraph [ref=e88]: Something broken or missing? No worries!
+          - paragraph [ref=e89]: We’ll ship your spare parts fast, so you’re back in your Quadvelo in no time.
+          - paragraph
+        - link "Shop now ..." [ref=e91] [cursor=pointer]:
+          - /url: /en/product/quadvelo/
+          - text: Shop now ...
+          - generic [ref=e92]: 
+      - generic [ref=e94]:
+        - heading "Subscribe to our newsletter about news & events" [level=2] [ref=e95]
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - textbox "Your email address..." [ref=e98]
+            - button "Subscribe now" [ref=e99] [cursor=pointer]
+          - generic [ref=e100]:
+            - checkbox "I agree to the Privacy Policy." [ref=e101]
+            - generic [ref=e102]:
+              - text: I agree to the
+              - link "Privacy Policy" [ref=e103] [cursor=pointer]:
+                - /url: /privacy_policy
+              - text: .
+    - generic [ref=e106]:
+      - generic [ref=e108]:
+        - heading "Quadvelo bikes aren’t just a ride—they’re a whole vibe!" [level=1] [ref=e109]
+        - paragraph [ref=e110]: Look at the Quadvelo, and you might think it’s a tiny car or a futuristic microcar. But don’t be fooled—this sleek machine is 100% an electric bike! It’s the perfect blend of pedal power and modern mobility, sitting right between a bicycle and a car. Who says you can’t have the best of both worlds?
+        - link "Features & Specifications" [ref=e111] [cursor=pointer]:
+          - /url: /en/specification/
+          - button "Features & Specifications" [ref=e112]
+      - generic [ref=e114]:
+        - generic [ref=e115]: Your browser does not support the video tag.
+        - button "Unmute video" [ref=e116] [cursor=pointer]:
+          - generic [ref=e117]: 
+    - generic [ref=e121]:
+      - generic [ref=e123]:
+        - generic [ref=e125]:
+          - generic [ref=e126]: Mobility solutions compared
+          - paragraph [ref=e127]: Quadvelo compared to other micro-mobility solutions
+        - link "More Info ..." [ref=e129] [cursor=pointer]:
+          - /url: /en/comparing/
+          - text: More Info ...
+          - generic [ref=e130]: 
+      - generic [ref=e132]:
+        - generic [ref=e134]:
+          - generic [ref=e135]: Quadvelo bike or small car?
+          - paragraph [ref=e136]: Why choose ? - simply the best of both worlds
+        - link "More Info ..." [ref=e138] [cursor=pointer]:
+          - /url: /en/advantages/
+          - text: More Info ...
+          - generic [ref=e139]: 
+      - generic [ref=e141]:
+        - generic [ref=e143]:
+          - generic [ref=e144]: Low cost of ownership
+          - paragraph [ref=e145]: What you can save on annual costs
+        - link "More Info ..." [ref=e147] [cursor=pointer]:
+          - /url: /en/low_cost_ownership/
+          - text: More Info ...
+          - generic [ref=e148]: 
+      - generic [ref=e150]:
+        - generic [ref=e152]:
+          - generic [ref=e153]: Quadvelo description
+          - paragraph [ref=e154]: "Discover the Quadvelo: Comfortable, Sustainable, and Healthy Transportation"
+        - link "More Info ..." [ref=e156] [cursor=pointer]:
+          - /url: /en/description/
+          - text: More Info ...
+          - generic [ref=e157]: 
+    - generic [ref=e161]:
+      - generic [ref=e165]:
+        - generic [ref=e166]: Send us a mail
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - textbox "Your Name" [ref=e171]
+            - textbox "Your Email" [ref=e174]
+          - textbox "Your Message" [ref=e176]
+          - button "Submit" [ref=e178] [cursor=pointer]
+      - generic [ref=e180]:
+        - generic [ref=e182]:
+          - generic [ref=e183]: Built in Europe
+          - paragraph [ref=e184]: We support our European economy by building most of the parts and assembly for Quadvelo.
+        - link "Read More ..." [ref=e186] [cursor=pointer]:
+          - /url: "#"
+          - text: Read More ...
+          - generic [ref=e187]: 
+      - generic [ref=e189]:
+        - generic [ref=e191]:
+          - generic [ref=e192]: Service partners
+          - paragraph [ref=e193]: Expanding our reach, enhancing your ride – Quadvelo Service Partners!
+        - link "Read More ..." [ref=e195] [cursor=pointer]:
+          - /url: /en/service_partners/
+          - text: Read More ...
+          - generic [ref=e196]: 
+    - generic [ref=e198]:
+      - heading "Featured Articles" [level=2] [ref=e199]
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - generic [ref=e203]:
+            - generic [ref=e205]:
+              - paragraph [ref=e208]: 2025-03-02
+              - generic [ref=e209]:
+                - generic [ref=e210]: Why does Dennis recommend buying a Quadvelo?
+                - link "Read More ..." [ref=e212] [cursor=pointer]:
+                  - /url: /blog/meyer-recommends
+                  - text: Read More ...
+                  - generic [ref=e213]: 
+            - generic [ref=e215]:
+              - paragraph [ref=e218]: 2025-02-18
+              - generic [ref=e219]:
+                - generic [ref=e220]: With the Quadvelo through Joerg's Daily Life
+                - link "Read More ..." [ref=e222] [cursor=pointer]:
+                  - /url: /blog/quadvelo-red-joerg
+                  - text: Read More ...
+                  - generic [ref=e223]: 
+          - text:   
+        - button "Next slide" [ref=e224] [cursor=pointer]
+    - generic [ref=e228]:
+      - paragraph [ref=e229]: Meet the Masters Behind Quadvelo!
+      - generic [ref=e231]:
+        - link "Katanga" [ref=e232] [cursor=pointer]:
+          - /url: /en/katanga/
+          - img "Katanga" [ref=e233]
+        - link "Velomo" [ref=e234] [cursor=pointer]:
+          - /url: /en/velomo/
+          - img "Velomo" [ref=e235]
+        - link "MECHteam" [ref=e236] [cursor=pointer]:
+          - /url: /en/mechteam/
+          - img "MECHteam" [ref=e237]
+    - generic [ref=e240]:
+      - heading "“ What Our Users Are Saying" [level=2] [ref=e242]:
+        - generic [ref=e243]: “
+        - text: What Our Users Are Saying
+      - generic [ref=e244]:
+        - generic [ref=e248]:
+          - link "Watch testimonial video" [ref=e250] [cursor=pointer]:
+            - /url: https://youtu.be/1yb-YcMizM0?si=PSRPh1zHMKg9m5Mp
+            - img "Watch testimonial video" [ref=e251]
+          - generic [ref=e252]:
+            - generic [ref=e253]: Why does Dennis recommend buying a Quadvelo?
+            - paragraph [ref=e254]:
+              - text: A green Quadvelo has been riding around Dortmund and the surrounding area since summer 2024. Its rider, Dennis Meyer - YouTuber and recumbent travelle...
+              - link "Read more ... " [ref=e256] [cursor=pointer]:
+                - /url: /en/blog/meyer-recommends/
+                - text: Read more ...
+                - generic [ref=e257]: 
+            - generic [ref=e259]:
+              - paragraph [ref=e260]: Dennis Meyer
+              - paragraph [ref=e261]: YouTuber and recumbent traveller
+        - button "Previous slide" [ref=e262] [cursor=pointer]
+        - button "Next slide" [ref=e264] [cursor=pointer]
+  - generic [ref=e266]:
+    - generic [ref=e268]:
+      - generic [ref=e269]: 
+      - text: Follow us on Instagram
+      - link "@quadvelo_eu" [ref=e270] [cursor=pointer]:
+        - /url: https://www.instagram.com/quadvelo_eu/
+    - generic [ref=e272]:
+      - img "Quadvelo" [ref=e274]
+      - img "Quadvelo" [ref=e276]
+      - img "Quadvelo" [ref=e278]
+      - img "Quadvelo" [ref=e280]
+      - img "Quadvelo" [ref=e282]
+      - img "Quadvelo" [ref=e284]
+  - contentinfo [ref=e285]:
+    - generic [ref=e287]:
+      - generic [ref=e288]:
+        - generic [ref=e290]:
+          - generic [ref=e291]: Help & Support
+          - list [ref=e292]:
+            - listitem [ref=e293]:
+              - generic [ref=e294]: 
+              - link "FAQs" [ref=e295] [cursor=pointer]:
+                - /url: /en/faq/
+            - listitem [ref=e296]:
+              - generic [ref=e297]: 
+              - link "Contact us" [ref=e298] [cursor=pointer]:
+                - /url: /en/contact/
+        - generic [ref=e300]:
+          - generic [ref=e301]: Legal
+          - list [ref=e302]:
+            - listitem [ref=e303]:
+              - generic [ref=e304]: 
+              - link "Cookies Policy" [ref=e305] [cursor=pointer]:
+                - /url: /en/cookies_policy/
+            - listitem [ref=e306]:
+              - generic [ref=e307]: 
+              - link "GDPR Compliance Statement" [ref=e308] [cursor=pointer]:
+                - /url: /en/gdpr_compliance/
+            - listitem [ref=e309]:
+              - generic [ref=e310]: 
+              - link "Privacy Policy" [ref=e311] [cursor=pointer]:
+                - /url: /en/privacy_policy/
+            - listitem [ref=e312]:
+              - generic [ref=e313]: 
+              - link "Terms & Conditions" [ref=e314] [cursor=pointer]:
+                - /url: /en/terms_and_conditions/
+            - listitem [ref=e315]:
+              - generic [ref=e316]: 
+              - link "Terms & Sale" [ref=e317] [cursor=pointer]:
+                - /url: /en/terms_of_sale/
+            - listitem [ref=e318]:
+              - generic [ref=e319]: 
+              - link "Data Protection" [ref=e320] [cursor=pointer]:
+                - /url: /en/data_protection/
+        - generic [ref=e322]:
+          - generic [ref=e323]: About
+          - list [ref=e324]:
+            - listitem [ref=e325]:
+              - generic [ref=e326]: 
+              - link "About us" [ref=e327] [cursor=pointer]:
+                - /url: /en/about/
+            - listitem [ref=e328]:
+              - generic [ref=e329]: 
+              - link "Blog" [ref=e330] [cursor=pointer]:
+                - /url: /en/blog/
+            - listitem [ref=e331]:
+              - generic [ref=e332]: 
+              - link "Gallery" [ref=e333] [cursor=pointer]:
+                - /url: /en/gallery/
+            - listitem [ref=e334]:
+              - generic [ref=e335]: 
+              - link "Warranty" [ref=e336] [cursor=pointer]:
+                - /url: /en/warranty/
+        - generic [ref=e338]:
+          - generic [ref=e339]: Subscribe
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - textbox "Your email address..." [ref=e342]
+              - button "Subscribe to newsletter" [ref=e343] [cursor=pointer]
+            - generic [ref=e344]:
+              - checkbox "I agree to the Privacy Policy." [ref=e345]
+              - generic [ref=e346]:
+                - text: I agree to the
+                - link "Privacy Policy" [ref=e347] [cursor=pointer]:
+                  - /url: /privacy_policy
+                - text: .
+          - generic [ref=e349]:
+            - link " Facebook" [ref=e350] [cursor=pointer]:
+              - /url: https://www.facebook.com/Quadvelo
+              - generic [ref=e351]: 
+              - text: Facebook
+            - link " Instagram" [ref=e352] [cursor=pointer]:
+              - /url: https://www.instagram.com/quadvelo_eu/
+              - generic [ref=e353]: 
+              - text: Instagram
+      - generic [ref=e354]:
+        - list [ref=e357]:
+          - listitem [ref=e358]:
+            - link "Home" [ref=e359] [cursor=pointer]:
+              - /url: /en/home/
+          - listitem [ref=e360]:
+            - link "Advantages" [ref=e361] [cursor=pointer]:
+              - /url: /en/advantages/
+          - listitem [ref=e362]:
+            - link "Comparing" [ref=e363] [cursor=pointer]:
+              - /url: /en/comparing/
+          - listitem [ref=e364]:
+            - link "Specification" [ref=e365] [cursor=pointer]:
+              - /url: /en/specification/
+        - paragraph [ref=e368]: Copyright 2025, Quadvelo.com
+    - generic [ref=e371]:
+      - generic [ref=e372]:
+        - generic [ref=e373]: THIS WEBSITE USES COOKIES
+        - paragraph [ref=e375]:
+          - text: By clicking "Accept" you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. View our
+          - link "cookie policy" [ref=e376] [cursor=pointer]:
+            - /url: /cookies_policy/
+          - text: .
+      - generic [ref=e377]:
+        - button "Allow" [ref=e378] [cursor=pointer]
+        - button "Deny" [ref=e379] [cursor=pointer]
+```
